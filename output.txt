@@ -1,1 +1,29 @@
-[{'tag': 'input', 'Lol': 'test', 'Test': 'Lol'}, {'tag': 'textbox', 'Tvoje': 'Mama', 'foo': 'bar'}]
+[
+    {
+        "tag": "input",
+        "placeholder": "FooBar",
+        "Lol": "test",
+        "Test": "Lol"
+    },
+    {
+        "tag": "textarea",
+        "Tvoje": "Mama",
+        "foo": "bar"
+    },
+    {
+        "tag": "div",
+        "nest": [
+            {
+                "tag": "input",
+                "placeholder": "VelkyTomik",
+                "Lol": "FooBar",
+                "FooBar": "Lol"
+            },
+            {
+                "tag": "textarea",
+                "Lol": "FoouBar",
+                "FoouBar": "Lol"
+            }
+        ]
+    }
+]
