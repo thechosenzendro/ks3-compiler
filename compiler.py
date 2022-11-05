@@ -21,9 +21,16 @@ def Element():
         if x == "nest":
             if props[x] in nests:
                 object[x] = nests[props[x]]
-            else:
-                print("Error: No Nest " + props[x] + " defined.")
-                quit()
+        if x == "label":
+            print("tomik")
+            label = {}
+            label['tag'] = "label"
+            label['for'] = props['id']
+            label['innerHTML'] = props[x]
+            if "label" in classes:
+                for x in classes['label']:
+                    label[x] = classes['label'][x]
+            output.append(label)
         else:
             object[x] = props[x]
     output.append(object)
@@ -63,7 +70,7 @@ def Nest():
 
 for i in sys.argv:
     list.append(i)
-f = open(list[1], "r")
+f = open(list[1], "r", encoding="utf-8")
 for x in f:
     y = str(x).replace("\n", "")
     temp = y.split(" ", 2)
@@ -71,7 +78,8 @@ for x in f:
         print("Error: Non-existent statement.")
         quit()
     exec(lookup[temp[0]])
-r = open("output.txt", "r+")
+r = open("output.txt", "r+", encoding="utf-8")
+r.write("")
 raw = str(output)
 cooked = raw.replace("'", '"')
 r.write(cooked)
