@@ -22,7 +22,6 @@ def Element():
             if props[x] in nests:
                 object[x] = nests[props[x]]
         if x == "label":
-            print("tomik")
             label = {}
             label['tag'] = "label"
             label['for'] = props['id']
@@ -75,7 +74,7 @@ for x in f:
     y = str(x).replace("\n", "")
     temp = y.split(" ", 2)
     if not temp[0] in lookup:
-        print("Error: Non-existent statement.")
+        print("Error: Non-existent statement. Error in: " + y)
         quit()
     exec(lookup[temp[0]])
 r = open("output.txt", "r+", encoding="utf-8")

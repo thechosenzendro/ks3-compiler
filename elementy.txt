@@ -1,0 +1,49 @@
+Údaje o stavebníkovi
+-----------------------------------------------------------------------
+class input {"class":"Input", "onchange":"ChangeContractData(this.id)"}
+element h1 {"innerHTML":"Údaje o stavebníkovi"}
+element br {}
+element input {"label":"Titul, jméno, příjmení:", "placeholder":"Ing. Jan Novák", "id":"tituljmenoprijmeni"}
+element br {}
+element input {"label":"Bydliště:", "placeholder":"Novákova 14, 602 00, Brno", "id":"bydliste"}
+element br {}
+element input {"label":"Datum narození:", "placeholder":"01.01.1900", "id":"datumnarozeni", "type":"date"}
+element br {}
+element input {"label":"Rodné číslo:", "placeholder":"123456/7890", "id":"rodnecislo"}
+element br {}
+element input {"label":"Číslo občanského průkazu:", "placeholder":"123 456 789", "id":"cisloobcanskehoprukazu"}
+element br {}
+element input {"label":"Kontakt - Telefon:", "placeholder":"+420 123 456 789", "id":"kontakt-telefon"}
+element br {}
+element input {"label":"Kontakt - Email:", "placeholder":"jan.novak@seznam.cz", "id":"kontakt-email"}
+element br {}
+element button {"class":"Prim Auto", "innerHTML":"Přidat nového stavebníka", "id":"vytvoritstavebnika"}
+-----------------------------------------------------------------------
+Údaje o termínech
+-----------------------------------------------------------------------
+class input {"class":"Input", "onchange":"ChangeContractData(this.id)"}
+element h1 {"innerHTML":"Údaje o termínech"}
+element br {}
+element input {"label":"Datum sos:", "placeholder":"01.01.1900", "id":"datumsos", "type":"date"}
+element br {}
+element input {"label":"Cena stavby:", "placeholder":"1 000 000 Kč", "id":"cenastavby"}
+element br {}
+element input {"label":"Typ domu:", "placeholder":"Galileo 14", "id":"typdomu"}
+element br {}
+element input {"label":"Datum zahájení:", "placeholder":"01.01.1900", "id":"datumzahajeni", "type":"date"}
+element br {}
+element input {"label":"Předpokládaný termín ukončení:", "placeholder":"01.01.1900", "id":"predpokladanyterminukonceni", "type":"date"}
+element br {}
+element input {"label":"Skutečný termín ukončení:", "placeholder":"01.01.1900", "id":"skutecnyterminukonceni", "type":"date"}
+element br {}
+element input {"label":"Projektant studie:", "placeholder":"Ing. Jan Novák, Ing. Jana Nováková", "id":"projektantstudie"}
+element br {}
+element input {"label":"Projektant PD:", "placeholder":"Ing. Jan Novák", "id":"projektantpd"}
+element br {}
+element input {"label":"Zajištění povolení stavby:", "placeholder":"???", "id":"zajistenipovolenistavby"}
+element br {}
+element input {"label":"Manažer projektu:", "placeholder":"Jan Novák", "id":"manazerprojektu"}
+element br {}
+element input {"label":"Manažer stavby:", "placeholder":"Jan Novák", "id":"manazerstavby"}
+element br {}
+-----------------------------------------------------------------------
